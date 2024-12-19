@@ -10,11 +10,11 @@ const submissionBtn = document.getElementById("submission-btn")
 // Declare a constant variable named "book" and assign
 // the name of your favorite book to that variable.
 
+const book = "Amusing Ourselves to Death";
 
 // Declare a mutable variable named "activity" and assign
 // an activity to it.
-
-
+let activity = "Drawing";
 
 function updateBookSentence() {
     // Sets the text inside the element with the id of book answer. 
@@ -25,13 +25,13 @@ function updateBookSentence() {
 function updateActivitySentence() {
     // Update this function 
     // (hint: it will be similiar to the previous function)
-
+    activityAnswerEl.innerText = activity
 }
 
 function render() {
     // Finish writing this function
     updateBookSentence();
-
+    updateActivitySentence();
 }
 
 submissionBtn.addEventListener("click", function () {
